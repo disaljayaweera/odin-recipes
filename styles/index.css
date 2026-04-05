@@ -1,0 +1,64 @@
+/* =============================================
+   index.css — Home Page
+   Techniques used:
+     - Element selectors  (body, h1, ul, li)
+     - ID selector        (#site-title)
+     - Class selectors    (.recipe-list, .recipe-link)
+     - Descendant combinator  (.recipe-list li)
+     - Cascade: general body styles flow down to all children
+   ============================================= */
+
+
+/* --- Element selector: styles every element on the page --- */
+body {
+    font-family: Georgia, serif;
+    background-color: #fdf6ec;
+    color: #333333;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+
+/* --- ID selector: targets the one unique main heading --- */
+#site-title {
+    font-size: 2.2rem;
+    color: #5a3e28;
+    border-bottom: 3px solid #e07b39;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+}
+
+
+/* --- Class selector: targets the <ul class="recipe-list"> --- */
+.recipe-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* --- Descendant combinator: targets <li> elements inside .recipe-list --- */
+.recipe-list li {
+    margin-bottom: 12px;
+}
+
+
+/* --- Class selector: styles the anchor tags with class="recipe-link" --- */
+.recipe-link {
+    display: block;
+    background-color: #ffffff;
+    color: #5a3e28;
+    text-decoration: none;
+    font-size: 1.05rem;
+    padding: 14px 18px;
+    border: 1px solid #ddc9b0;
+    border-left: 4px solid #e07b39;
+    border-radius: 4px;
+}
+
+
+/* --- Hover state: changes appearance when the mouse moves over a link --- */
+.recipe-link:hover {
+    background-color: #fce8d5;
+    color: #c0551a;
+}
